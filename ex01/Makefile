@@ -1,0 +1,48 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: anouri <anouri@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/01/16 10:56:57 by anouri            #+#    #+#              #
+#    Updated: 2024/01/16 17:55:23 by anouri           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME= ScavTrap
+
+INCDIR= -I./incs
+
+SRCDIR= ./srcs
+
+# BUILDDIR= ./objs
+
+CXX= c++
+
+CXXFLAGS= -Wall -Werror -Wextra -std=c++98 ${INCDIR} 
+
+SRCS = ${wildcard ${SRCDIR}/*.cpp}
+
+OBJS = ${SRCS:.cpp=.o}
+
+RM= rm -rf
+
+${NAME}: ${OBJS}
+	${CXX} ${CXXFLAGS} ${OBJS} -g -o $@
+
+all: ${NAME}
+
+%.o:%.cpp
+	${CXX} ${CXXFLAGS} -c $< -o $@
+
+clean:
+	${RM} ${OBJS}
+
+fclean: clean
+	${RM} ${NAME}
+
+re: fclean all
+
+.Phony: clean fclean re
+  
