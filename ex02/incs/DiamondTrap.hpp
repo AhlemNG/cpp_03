@@ -6,7 +6,7 @@
 /*   By: anouri <anouri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 17:59:40 by anouri            #+#    #+#             */
-/*   Updated: 2024/01/16 18:10:29 by anouri           ###   ########.fr       */
+/*   Updated: 2024/01/17 11:20:47 by anouri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,9 @@ class DiamondTrap: public ScavTrap, public FragTrap
         ~DiamondTrap ();
         DiamondTrap(DiamondTrap const &src);
         DiamondTrap operator=(DiamondTrap const &rhs);
-        
+        DiamondTrap(std::string const name);
+
+        void attack(std::string const &target);
         
 };
 
