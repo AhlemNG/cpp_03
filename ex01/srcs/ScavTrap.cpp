@@ -6,7 +6,7 @@
 /*   By: anouri <anouri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 16:36:43 by anouri            #+#    #+#             */
-/*   Updated: 2024/01/16 17:52:03 by anouri           ###   ########.fr       */
+/*   Updated: 2024/01/22 14:37:28 by anouri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,5 +67,5 @@ void ScavTrap::attack(const std::string &target)
 
 void ScavTrap::guardGate()
 {
-    std::cout << MAGENTA << "ScavTrap " << _name << " is now in Gate keeper mode" << RESET << std::endl;
+    std::cout << BOLD << MAGENTA << "ScavTrap " << _name << " is now in Gate keeper mode" << RESET << std::endl;
 }

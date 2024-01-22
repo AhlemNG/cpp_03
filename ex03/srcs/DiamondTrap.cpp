@@ -6,7 +6,7 @@
 /*   By: anouri <anouri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 18:09:59 by anouri            #+#    #+#             */
-/*   Updated: 2024/01/18 13:46:21 by anouri           ###   ########.fr       */
+/*   Updated: 2024/01/18 14:26:47 by anouri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,9 @@
 #include "../incs/ClapTrap.hpp"
 #include "../incs/Colors.hpp"
 
-DiamondTrap ::DiamondTrap ()
+DiamondTrap ::DiamondTrap () : ClapTrap(), ScavTrap(), FragTrap()
 {
+    _name = "no name";
     _hitPoints = FragTrap::_hitPoints;
     _energyPoints = ScavTrap::_energyPoints;
     _attackDamage = FragTrap::_attackDamage;

@@ -6,7 +6,7 @@
 /*   By: anouri <anouri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 15:45:13 by anouri            #+#    #+#             */
-/*   Updated: 2024/01/18 10:08:58 by anouri           ###   ########.fr       */
+/*   Updated: 2024/01/18 14:30:21 by anouri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class ScavTrap : public virtual ClapTrap
         ScavTrap();
         ScavTrap(ScavTrap const &src);
         ScavTrap & operator=(ScavTrap const &rhs);
-        ~ScavTrap();
+        virtual ~ScavTrap();
 
         ScavTrap(const std::string & name);
 

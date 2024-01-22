@@ -6,7 +6,7 @@
 /*   By: anouri <anouri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 15:45:13 by anouri            #+#    #+#             */
-/*   Updated: 2024/01/18 10:08:52 by anouri           ###   ########.fr       */
+/*   Updated: 2024/01/18 14:30:07 by anouri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,17 @@
 
 class FragTrap : public virtual ClapTrap
 {
+    protected:
+        /*
+        static int const
+        static int const
+        static int const
+    */
     public:
         FragTrap();
         FragTrap(FragTrap const &src);
         FragTrap & operator=(FragTrap const &rhs);
-        ~FragTrap();
+        virtual ~FragTrap();
 
         FragTrap(const std::string & name);
 

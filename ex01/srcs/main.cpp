@@ -6,7 +6,7 @@
 /*   By: anouri <anouri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 12:05:16 by anouri            #+#    #+#             */
-/*   Updated: 2024/01/16 17:26:02 by anouri           ###   ########.fr       */
+/*   Updated: 2024/01/22 14:36:36 by anouri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ int main()
 	std::cout << MAGENTA << "*****************************************************" <<RESET <<std::endl;
 	a.attack("GIGI");
 	f.attack("some Robot");
+	f.guardGate();
 	a.attack("GIGI");
 	a.beRepaired(3);
 	ScavTrap e = f;

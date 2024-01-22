@@ -6,7 +6,7 @@
 /*   By: anouri <anouri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 11:12:21 by anouri            #+#    #+#             */
-/*   Updated: 2024/01/16 17:22:49 by anouri           ###   ########.fr       */
+/*   Updated: 2024/01/18 12:02:42 by anouri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class ClapTrap
         int _attackDamage;/*initilized to 10*/
     public:
         ClapTrap();/*default constructor*/
-        ~ClapTrap(); /*destructor*/
+        virtual ~ClapTrap(); /*destructor*/
         ClapTrap(ClapTrap const &src);/*copy constructor*/
         ClapTrap operator=(ClapTrap const &rhs); /*copy assignment operator*/
         
